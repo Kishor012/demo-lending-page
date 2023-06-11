@@ -1,0 +1,340 @@
+{% load static %}
+<style>
+       @media screen and (max-width:367px){       
+        /*Navigations Bar Design*/
+        .content{
+            margin: 0;
+            background-color: #ffff;
+            width: auto;
+            height: auto;
+            
+          }
+        a:focus{
+              outline: none;
+        }
+        nav{
+              width: auto;
+              height: auto;
+              background: linear-gradient(aquamarine,rgba(153, 205, 50, 0.178));
+              color: rgba(32, 27, 27, 0.925);
+              border: 0px solid red;
+              display: flex;
+              flex-direction: column;
+              padding: 0px !important;
+        }
+        small{
+              font-size: 10px;
+        }
+        nav ul{
+              text-decoration: none;
+              width: 65%;
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              font-size: 17px;
+              font-weight: 650;
+              margin-top: 0px;
+              margin-left: -20px;
+              transform: translate(-100%);
+              transition: transform 0.5s ease-in;
+              }
+        .logo{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        }
+        .logo img{
+            width: 100px;
+            height: auto;
+            border: 0px solid black;
+        }
+        .logo span{
+          display: block;
+          font-size: 30px;
+          margin-left: auto;
+       }
+        nav ul li{
+        list-style: none;
+        padding-left: 35px;
+        padding-top: 10px;
+        line-height: 45px;
+        }
+        nav ul li h4{
+              margin-top: 25px;
+        }
+        /*Navigations Bar Design*/
+  
+         /* Header CSS Style */
+      .header{
+        width: auto;
+        height: 240px;
+        margin:12px 0px 0px 0px;
+        border: 0px solid black;
+        padding: 0px;
+        }
+        .header_bac_img{
+        max-width: 350px;
+        min-width: auto;
+        height: 212px !important;
+        border: 0px solid red;
+        border-radius: 12px;
+        }  
+        .head_con_title{
+        width: auto;
+        height: 212px;
+        border: 1px solid rgba(0, 0, 255, 0.486);
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.493);
+        color: aliceblue;
+        }
+  
+        .head_con_title h1{
+        width: 200px;
+        height: auto;
+        border: 0px solid red;
+        margin: 50px;
+        margin-top: 12%;
+        font-size: 26px;
+        font-size: larger;
+        }
+        
+        .flex_man_title h4{
+        width: 200px;
+        height: auto;
+        font-size: 15px;
+        margin-top: 0px;
+        border: 0px solid black;
+        }
+        .sec_con_flex_1{
+        display: block;
+        width: 340px;
+        height: auto;
+        margin: 12px 0px;
+        border: 1px solid #eeee;
+        border-radius: 12px;
+        background: rgba(219, 211, 221, 0.233);
+        padding-bottom: 15px;
+        letter-spacing: 1px;
+        }
+        .sec_con_title h2{
+        width: auto;
+        height: auto;
+        margin: 0;
+        font-size: 15px;
+        line-height: 21px !important;
+        border: 0px solid black;
+        }
+  
+  /* Description CSS Sylyle */
+  .desc_man_box{
+      width: 360px !important;
+      height: auto !important;
+      border: 0px solid red !important;
+      margin: 0px 0px !important;
+      }
+      .desc_man_box h1{
+      margin-top: 20px !important;
+      width: 332px !important;    
+      margin-left: 20px;
+      line-height: 34px !important;
+      font-size: 25px !important;
+      }
+      .desc_head_con_img{
+      width: auto !important;
+      height: auto !important;
+      border: 0px solid rgb(76, 76, 238) !important;
+      border-radius: 12px;
+      margin: 15px 0px 0px 0px  !important;
+      padding: 5px !important;
+      }
+      .desc_head_con_img img{
+      border-radius: 12px;
+      }
+      .desc_title_con{
+      width: auto;
+      height: auto;
+      border: 0px solid red !important;
+      padding: 0px 20px 10px 20px;
+      line-height: 32px;
+      font-size: 15px;
+      margin-top: 32px;
+      }
+      .desc_title_con h4{
+      width: 332px !important;
+      height: auto;
+      font-size: 20px !important;
+      border: 0px solid black;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      }
+      .desc_title_con p{
+      line-height: 26px;
+      font-size: 15px;
+      }
+  /* Description CSS Sylyle */
+  
+  /* Pagination CSS Style Mobile Responsive */
+  
+  .css-page-m-p-s{ 
+      padding: 10px;
+      margin-top: 25px;
+      border: 0px solid black;
+  }
+  .css-page-main{
+    width: 100% !important;
+    margin-left: 0px !important;
+    height: auto;
+    border: 0px solid red;
+  }
+  .css-page-control{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #ffff;
+    padding: 0.2rem;
+    color: #4a5568; /*Text Article Color */
+  }
+  .css-page-action{
+  width: 120px;
+  height: auto;
+  border: 0px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #718096;
+  font-size: 1rem;
+  color: #dfe9f7;  /* Muted Action Botton Color */
+  text-align: center;
+  }
+  .css-page-action a{
+    text-decoration: none;
+    color: #dfe9f7;
+  }
+  .next:hover{
+    background-color: #5a67d8c2;
+    transition: 0.7s;
+  }
+  .previous:hover{
+  background-color: #5a67d8c2;
+  transition: 0.7s;
+  }
+  .css-count-msg{
+    margin: 0;
+    margin: auto;
+  }
+  
+  /* Pagination CSS Style Mobile Responsive */
+  
+  
+  /* Tech Content Box CSS Style Design */
+     
+  .tech_con_box{
+      max-width: 360px;
+      min-width: auto;
+      height: auto;
+      border: 0px solid red;
+      border-radius: 12px;
+      padding: 10px;
+  }
+  .tech_con_head{
+      max-width: 140px;
+      min-width: none;
+      height: auto;
+      border: 0px solid black;
+      margin-top: 25px;
+      margin-bottom: 60px;
+      font-size: 18px;
+  }
+  .tech_con_head h1{
+      width: 260px;
+      margin: 0px 5px;
+  }
+  .tech_con_head hr{
+      margin-top: -2px;
+      margin-left: 0px;
+      border: 2px solid red;
+  }
+  .sec_con_flex_1{
+      display: none;
+  }
+  footer{
+      width: auto;
+      height: auto;
+      background: linear-gradient(rgba(153, 205, 50, 0.178),aquamarine);
+      border: 0px solid red;
+      text-align: center;
+      padding: 5px 15px;
+      margin-bottom: 0px;
+      letter-spacing: 1px;
+  }
+  .footer_con{
+      width: auto;
+      height: auto;
+      border: 0px solid black;
+  }
+  
+  /* Tech Content Box CSS Style Design */
+  
+  /* Media Screen Responsive CSS Style */
+  /* Description Page */
+  .desc_man_box{
+      width: 350px !important;
+      height: auto !important;
+      border: 0px solid red !important;
+      margin: 0px 0px !important;
+      }
+      .desc_man_box h1{
+      margin-top: 20px !important;
+      width: 332px !important;    
+      margin-left: 12px;
+      line-height: 34px !important;
+      font-size: 25px !important;
+      }
+      .desc_head_con_img{
+      width: auto !important;
+      height: auto !important;
+      border: 0px solid rgb(76, 76, 238) !important;
+      border-radius: 12px;
+      margin: 15px 0px 0px 0px  !important;
+      padding: 5px !important;
+      }
+      .desc_head_con_img img{
+      border-radius: 12px;
+      }
+      .desc_title_con{
+      width: auto;
+      height: auto;
+      border: 0px solid red !important;
+      padding: 0px 20px 10px 20px;
+      line-height: 32px;
+      font-size: 15px;
+      margin-top: 32px;
+      }
+      .desc_title_con h4{
+      width: 332px !important;
+      height: auto;
+      font-size: 20px !important;
+      border: 0px solid black;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      }
+      .desc_title_con p{
+      line-height: 26px;
+      font-size: 15px;
+      }
+  }
+</style>
+<nav>
+        <div class="logo">
+               <a href="{% url 'back_home'%}"><img src="{% static 'blogpost/images/neutam.png' %}" alt="brand_logo" width="100%" height="100%" /></a>
+               <span><i class="fas fa-bars"></i></span>
+        </div>
+
+        <ul>
+            <li><a href="{% url 'back_home'%}">Home</a></li>
+            <li><a href="{% url 'back_ads'%}">Advertise</a></li>
+            <li><a href="{% url 'back_tech'%}">Technology</a></li>
+            <li><a href="{% url 'back_make'%}">Make Money</a></li>
+        </ul>
+  </nav>

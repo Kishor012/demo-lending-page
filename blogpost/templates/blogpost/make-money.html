@@ -1,0 +1,83 @@
+{% extends 'blogpost/base.html'%}
+{% load static %}
+{% block metakey %}
+    <meta name="keywords" content="Make Money Online | Blogging | Promoting | Affliate Marketing | YouTube Video Marketing">
+    <meta name="description" content="How To Start Facebook Advertising, How To Start Google Advertise, How To Advertise Product Instaghram">
+    <meta name="author" content="www.speedyclever.com">
+    <!-- <meta http-equiv="refresh" content="5; url=http://www.google.com"> -->
+    <title>Google Advertise | Best Amazone Affliate Product Sell For Online | How To Start Digital Marketing</title>
+{% endblock metakey %}
+{% block content %} 
+    <div class="tech_con_box">
+
+               <div class="tech_con_head">
+                       <h1>Make Money Online</h1><hr>
+               </div>
+
+               <div class="sec_con_wraper">
+                <div class="sec_con_flex_man">
+                    {% for make in makemoney_post %}
+                       <div class="second_containt_box">
+                           <div class="sec_con_img">
+                               <img src="{{make.photo.url}}" alt="how_to promote adsmarketings" width="100%" height="80%" />
+                           </div>
+                           <div class="sec_con_title">
+                              <a href="{% url 'make-desc' make.id %}"><h2>{{make.title|truncatewords:16}}</h2></a>
+                                <p>{{desc_post}}...</p>
+                                <small><b>{{make.date}}</b></small>
+                           </div>
+                       </div>
+                    {% endfor %}  
+                    
+                    <div class="css-page-m-p-s">   
+                        <div class="css-page-main">
+                            <div class="css-page-control">
+                                {% if page_obj.has_previous %}
+                                <div class="css-page-action previous"><a href="?page={{page_obj.previous_page_number}}">Previous</a></div>
+                                {% else %}
+                                <div class="css-page-action" aria-disabled="true" style="background-color: #ffff;"><a href="#"></a></div>
+                                {% endif %}
+
+                                    <div class="css-count-msg"><strong>{{page_obj}}</strong></div>
+                                
+                                {% if page_obj.has_next %}
+                                <div class="css-page-action next"><a href="?page={{page_obj.next_page_number}}"> Next</a></div>
+                                {% else %}
+                                <div class="css-page-action" aria-disabled="true" style="background-color: #ffff;"><a href="#"></a></div>  
+                                {% endif %}
+                            </div>
+                        </div>
+                   </div>
+           
+                    
+           
+           
+               </div>
+               <div class="sec_flex_man_box">
+                   <div class="sec_con_flex_1">
+                       <div class="sec_con_flex_img">
+                           <img src="{% static 'blogpost/images/61DKcGr12OL._SL1500_.jpg'%}" alt="article_amazone_affliate_register_process" width="100%" height="100%">
+                       </div>    
+                       <h4>Oneplus Bullets Wireless Z Bass Edition Bluetooth in Ear Earphones with mic (Reverb Red)</h4>
+                       <h5>Rs. 1,999</h5> <a href="https://amzn.to/32YTsfp"><span><b>(Shop Now Amazone)</b></span></a><br><br>
+                           <small><b>Post: 20 / 04 / 2022</b></small>
+                   </div>
+           
+                   <div class="sec_con_flex_1">
+                       <div class="sec_con_flex_img">
+                           <img src="{% static 'blogpost/images/hp_16gb_ssd_core-i5-laptop.jpg'%}" alt="article_amazone_affliate_register_process" width="100%" height="100%">
+                       </div>    
+                       <h4>HP Pavilion 14, Intel 11th Gen Core i5 16GB RAM/512GB SSD 14-inch Laptop,
+                           FHD Micro-Edge Anti-Glare Display/Iris X Graphics/ Alexa/Backlit/1.41kg..</h4>
+                           <h5>Rs. 67,990</h5> <a href="https://amzn.to/3to19GQ"><span><b>(Shop Now Amazone)</b></span></a><br><br>
+                           <small><b>Post: 20 / 04 / 2022</b></small>
+                   </div>
+           
+               </div>
+           
+           </div>
+           
+
+
+    </div>
+{% endblock content %}

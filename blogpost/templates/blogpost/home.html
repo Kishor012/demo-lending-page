@@ -1,0 +1,112 @@
+{% extends 'blogpost/base.html'%}
+{% load static %}
+{% block content %} 
+<div class="header_wraper">
+    <div class="header">
+        <div class="header_bac_img" style="background: linear-gradient(-70deg, #00d8908f 30%, rgba(49, 92, 66, 0.13) 30%), url({{make_posts.photo.url}});">    
+            <div class="head_con_title">
+                <h1><a href="{% url 'make-desc' make_posts.id %}">{{make_posts.title}}</a></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_inner_flex">
+        
+        <div class="header_flex_man">
+            <div class="flex_man_img">
+                <img src="{{tech_posts.photo.url}}" alt="Flex_man_one image_1" width="100%" height="100%"/>
+            </div>
+            
+            <div class="flex_man_title">
+                <a href="{% url 'tech-desc' tech_posts.id %}"><h4>{{tech_posts.title|truncatewords:10}}</h4></a>
+                <small><b>{{tech_posts.date}}</b></small>
+            </div>
+        </div>
+        
+        <div class="header_flex_man">
+            <div class="flex_man_img">
+                <img src="{{make_posts.photo.url}}" alt="Flex_man_one image_1" width="100%" height="100%"/>
+            </div>
+            
+            <div class="flex_man_title">
+                <a href="{% url 'make-desc' make_posts.id%}"><h4>{{make_posts.title|truncatewords:10}}</h4></a>
+                <small><b>{{make_posts.date}}</b></small>
+            </div>
+        </div>
+      
+
+    </div>
+</div>
+
+         <!--Second Content Start HTML Design -->
+         <div class="sec_con_wraper">
+            <div class="sec_con_flex_man">
+                
+                {% for ads in ads_all_post %}
+                   <div class="second_containt_box">
+                       <div class="sec_con_img">
+                           <img src="{{ads.photo.url}}" alt="how_to promote adsmarketings" width="100%" height="80%" />
+                       </div>
+                       <div class="sec_con_title">
+                          <a href="{% url 'ads-desc' ads.id %}"><h2>{{ads.title|truncatewords:15}}</h2></a>
+                            <p>{{ads.desc|truncatewords:28}}</p>
+                            <small><b>{{ads.date}}</b></small>
+                       </div>
+                   </div>
+                   {% endfor %}
+
+
+                   {% for tech in tech_all_post %}
+                   <div class="second_containt_box">
+                       <div class="sec_con_img">
+                           <img src="{{tech.photo.url}}" alt="how_to promote adsmarketings" width="100%" height="80%" />
+                       </div>
+                       <div class="sec_con_title">
+                          <a href="{% url 'tech-desc' tech.id %}"><h2>{{tech.title|truncatewords:15}}</h2></a>
+                            <p>{{tech.desc|truncatewords:28}}</p>
+                            <small><b>{{tech.date}}</b></small>
+                       </div>
+                   </div>
+                   {% endfor %}
+
+                   {% for make in make_all_post %}
+                   <div class="second_containt_box">
+                       <div class="sec_con_img">
+                           <img src="{{make.photo.url}}" alt="how_to promote adsmarketings" width="100%" height="80%" />
+                       </div>
+                       <div class="sec_con_title">
+                          <a href="{% url 'make-desc' make.id %}"><h2>{{make.title|truncatewords:15}}</h2></a>
+                            <p>{{make.desc|truncatewords:28}}</p>
+                            <small><b>{{make.date}}</b></small>
+                       </div>
+                   </div>
+                   {% endfor %}
+
+           </div>
+           <div class="sec_flex_man_box">
+               <div class="sec_con_flex_1">
+                   <div class="sec_con_flex_img">
+                       <img src="{% static 'blogpost/images/61DKcGr12OL._SL1500_.jpg'%}" alt="article_amazone_affliate_register_process" width="100%" height="100%">
+                   </div>    
+                   <h4>Oneplus Bullets Wireless Z Bass Edition Bluetooth in Ear Earphones with mic (Reverb Red)</h4>
+                   <h5>Rs. 1,999</h5> <a href="https://amzn.to/32YTsfp"><span><b>(Shop Now Amazone)</b></span></a><br>
+                       <small><b>Post: 20 / 04 / 2022</b></small>
+               </div>
+       
+               <div class="sec_con_flex_1">
+                   <div class="sec_con_flex_img">
+                       <img src="{% static 'blogpost/images/hp_16gb_ssd_core-i5-laptop.jpg'%}" alt="article_amazone_affliate_register_process" width="100%" height="100%">
+                   </div>    
+                   <h4>HP Pavilion 14, Intel 11th Gen Core i5 16GB RAM/512GB SSD 14-inch Laptop,
+                       FHD Micro-Edge Anti-Glare Display/Iris X Graphics/ Alexa/Backlit/1.41kg..</h4>
+                       <h5>Rs. 67,990</h5> <a href="https://amzn.to/3to19GQ"><span><b>(Shop Now Amazone)</b></span></a><br><br>
+                       <small><b>Post: 20 / 04 / 2022</b></small>
+               </div>
+       
+           </div>
+       
+       </div>
+
+<!-- Second Content Disign End Sec -->
+
+{% endblock content %}

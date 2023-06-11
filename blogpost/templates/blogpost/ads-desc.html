@@ -1,0 +1,42 @@
+{% extends 'blogpost/base.html'%}
+{% load static %}
+{% block metakey %}
+    <meta name="keywords" content="{{pi.title|truncatewords:16}}">
+    <meta name="description" content="{{pi.desc|truncatewords:16}}">
+    <meta name="author" content="www.neutam.com">
+    <!-- <meta http-equiv="refresh" content="5; url=http://www.google.com"> -->
+    <title>{{pi.title|truncatewords:7}}</title>
+{% endblock metakey %}
+
+{% block content %}
+<div class="desc_man_box">
+        <div class="desc_heading_con">
+            <h1>{{pi.title}}</h1>
+        </div>
+
+        <div class="desc_head_con_img">
+            <img src="{{pi.photo.url}}" alt="{{pi.title|truncatewords:10}}" width="100%" height="100%">
+        </div>
+
+        <div class="desc_title_con">
+             <h4>{{pi.subtitleone}}</h4>
+               <h5 class="weblink"><a href="{{pi.website}}">{{pi.webname}}</a></h5>
+            <p>{{pi.desc}}</p>
+        </div>
+
+        <div class="desc_title_con">
+            <p>{{pi.subdescone}}</p>
+        </div>
+
+        <div class="desc_title_con">
+            <h4>{{pi.subtitletwo}}</h4>
+            <p>{{pi.subdesctwo}}</p>
+        </div>
+
+        <div class="desc_title_con">
+            <h4>{{pi.subtitlethree}}</h4>
+            <p>{{pi.subdescthree}}</p>
+        </div>
+</div>
+
+{% endblock content %}

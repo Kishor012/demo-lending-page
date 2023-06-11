@@ -1,0 +1,978 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+.content{
+  margin: 0 100px;
+  background-color: #ffff;
+  width: auto;
+  height: auto;
+}
+a{
+  color: rgba(63, 75, 83, 0.842);
+  text-decoration: none;
+}
+a :hover{
+    text-decoration: none;
+    color: red;
+}
+
+/* Header Second Content Css Style */
+.second_containt_box{
+    width: 750px;
+    height: 190px;
+    border: 0px solid black;
+    border-bottom: 1px solid #eeee;
+    padding: 2px 8px;
+    display: flex;
+    margin: 5px 0px;
+}
+.sec_con_img{
+    width: 220px;
+    height: 220px;
+    border: 0px solid rgb(157, 255, 9);
+    border-radius: 12px;
+}
+.sec_con_img img{
+    border-radius: 12px;
+    border: 1px solid greenyellow;
+}
+.sec_con_title{
+    width: 520px;
+    height: auto;
+    padding: 5px 8px;
+    border: 0px solid black;
+    margin-left: 10px;
+}
+.sec_con_title h2{
+    width: auto;
+    height: auto;
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px !important;
+    border: 0px solid black;
+}
+.sec_con_title p{
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 0.8rem;
+    color: rgb(40, 41, 43);
+}
+.sec_con_title small{
+    letter-spacing: 1px;
+    color: dimgrey;
+}
+
+/* Header Second Content Css Style */
+
+
+/* Header Flex Man Style */
+.header_bac_img{
+    width: 585px;
+    height: 340px;
+    border: 0px solid blue;
+    border-radius: 12px;
+}
+.head_con_title a{
+    color: aliceblue !important;
+}
+.header_wraper{
+    display: flex;
+}
+.header_inner_flex{
+    width: auto;
+    height: auto;
+    border: 0px solid red;
+}
+.header_flex_man{
+    width: auto;
+    height: 153px;
+    margin: 25px 35px;
+    border: 0px solid black;
+    border-radius: 12px;
+    padding: 5px;
+    display: flex;
+    background: rgba(219, 211, 221, 0.233);
+}
+.flex_man_img{
+    width: 160px;
+    height: 140px;
+    border:0px solid pink;
+}
+.flex_man_img img{
+    border-radius: 12px;
+    border: 0px solid blueviolet;
+}
+.flex_man_title{
+    width: auto;
+    height: auto;
+    border: 0px solid yellowgreen;
+    padding: 12px;
+}
+.flex_man_title small{
+    letter-spacing: 1px;
+    color: dimgray;
+}
+
+.flex_man_title h4{
+    width: 200px;
+    height: auto;
+    font-size: 16px;
+    margin-top: -10px;
+    border: 0px solid black;
+}
+
+/* Header Flex Man Style */
+
+
+
+/* Sec Content Wreeper Man CSS Style */
+
+.sec_con_wraper{
+    display: flex;
+}   
+.sec_con_flex_1{
+    width: 318px;
+    height: auto;
+    border: 1px solid #eeee;
+    border-radius: 12px;
+    background: rgba(219, 211, 221, 0.233);
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    }
+.sec_con_flex_1 h4{
+    width: auto;
+    height: auto;
+    margin: 8px;
+    border: 0px solid blue;
+    line-height: 24px;
+    }
+.sec_con_flex_1 h5{
+    margin-left: 8px;
+}
+.sec_con_flex_1 span{
+    margin-left: 8px;
+    color: red;
+}
+.sec_con_flex_1 small{
+    margin-left: 8px;
+}  
+.sec_con_flex_img{
+    width: auto;
+    height: 232px;
+    border: 0px solid red;
+    }
+.sec_con_flex_img img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Sec Content Wreeper Man CSS Style */
+
+
+/* Catogiry All Page Css Style */
+/*Advertise Page*/
+/* Makemoney Page Css Style */
+/* tachnology page CSS Style  */
+
+.tech_con_box{
+    width: auto;
+    height: auto;
+    border: 0px solid red;
+    border-radius: 12px;
+    padding: 15px 35px;
+}
+.tech_con_head{
+    width: 280px;
+    height: auto;
+    border: 0px solid black;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+.tech_con_head h1{
+    margin: 0px 5px;
+}
+.tech_con_head hr{
+    margin-top: -2px;
+    margin-left: 0px;
+    border: 2px solid red;
+}
+
+/* Catogiry All Page Css Style */
+
+/* Pagination Design Css Style */
+.css-page-m-p-s{ 
+        padding: 10px;
+        margin-top: 25px;
+        border: 0px solid black;
+    }
+ .css-page-main{
+      width: 55%;
+      margin-left: 22%;
+      height: auto;
+      border: 0px solid red;
+  }
+  .css-page-control{
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      background-color: #ffff;
+      padding: 0.2rem;
+      color: #4a5568; /*Text Article Color */
+  }
+  .css-page-action{
+    width: 100px;
+    height: auto;
+    border: 0px solid black;
+    border-radius: 30px;
+    padding: 3px;
+    background-color: #718096;
+    font-size: 1rem;
+    color: #dfe9f7;  /* Muted Action Botton Color */
+    text-align: center;
+  }
+  .css-page-action a{
+      text-decoration: none;
+      color: #dfe9f7;
+  }
+  .next:hover{
+      background-color: #5a67d8c2;
+      transition: 0.7s;
+  }
+  .previous:hover{
+    background-color: #5a67d8c2;
+    transition: 0.7s;
+  }
+  .css-count-msg{
+      margin: 0;
+      margin: auto;
+  }
+  .css-count-msg strong{
+    font-size: 12px;
+  }
+
+.weblink{
+    margin: 10px 0px;
+}
+.weblink a{
+    width: auto;
+    padding: 3px 0;
+    color: red !important;
+    border: 0px solid black;
+    border-radius: 6px;
+    text-decoration: underline;
+}
+
+/* Pagination Design Css Style */
+
+
+/* Footer Manage Style */
+
+footer{
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgba(153, 205, 50, 0.178),aquamarine);
+    border: 0px solid red;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+.footer_con{
+    width: auto;
+    height: auto;
+    border: 0px solid black;
+}
+
+/* Footer Manage Style */
+
+/* Media Screen Responsive CSS Style */
+
+@media screen and (max-width:1368px){
+    small{
+        font-size: 10px;
+      }
+    nav{
+        width: auto;
+        height: auto;
+        background: linear-gradient(aquamarine,rgba(153, 205, 50, 0.178));
+        color: rgba(32, 27, 27, 0.925);
+        border: 0px solid red;
+        display: flex;
+        padding: 10px;
+    }
+    .logo{
+        border: 0px solid black;
+    }
+    .logo img{
+        width: 180px;
+        height: auto;
+        border: 0px solid black;
+    }
+    .logo span{
+        display: none;
+    }
+    nav ul{
+        text-decoration: none;
+        margin: 0 0 0 auto;
+        padding: 0;
+        display: flex;
+        font-size: 15px;
+        font-weight: 900;
+        border: 0px solid black;
+    }
+    nav ul li{
+        list-style: none;
+        line-height: 45px;
+        padding: 0 10px;
+    }
+
+    /* Header Css  Style */
+
+
+    .header_wraper{
+       display: flex;
+       justify-content: space-around;
+    } 
+    .header{
+        max-width: auto;
+        min-width: 480px;
+        height: auto;
+        margin:20px 0px 50px 15px;
+        border: 0px solid black;
+    }
+    .header_bac_img{
+        max-width: 585px;
+        min-width: 420px;
+        height: 340px;
+        border: 0px solid blue;
+        border-radius: 12px;
+    }
+    .header_inner_flex{
+        max-width: auto;
+        min-width: 180px;
+        height: auto;
+        border: 0px solid red;
+        padding: 0px;
+    }
+    .header_flex_man{
+        max-width: auto;
+        min-width: 280px;
+        height: auto;
+        margin: 25px 5px;
+        border: 1px solid #eeee;
+        border-radius: 12px;
+        padding: 2px;
+        display: flex;
+        background: rgba(219, 211, 221, 0.233);;
+    }
+    
+    .head_con_title{
+        width: 585px;
+        height: 340px;
+        border: 1px solid rgba(0, 0, 255, 0.486);
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.493);
+    }
+    
+    .head_con_title h1{
+        width: 385px;
+        height: auto;
+        margin-top: 110px;
+        margin-left: 65px;
+        border: 0px solid red;
+    }
+    .head_con_title h1 a{
+        color: aliceblue !important;
+    }
+    .header_wraper{
+        width: auto;
+        height: auto;
+        border: 0px solid black;
+        display: flex;
+    }
+    .sec_con_wraper{
+        width: auto;
+        height: auto;
+        border: 0px solid black;
+        display: flex;
+   }    
+   .sec_flex_man_box{
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      border: 0px solid black;
+   }
+   .sec_con_flex_1{
+      margin: 0px 25px 25px 50px;
+   }
+   
+/* Description Page Style Design Media Query */
+   
+   .desc_man_box{
+        width: 820px;
+        height: auto;
+        border: 0px solid black;
+        margin: 45px 50px;
+        font-size: 18px;
+    }
+    .desc_man_box h1{
+        margin-left: 20px;
+    }
+    .desc_head_con_img{
+        width: 700px;
+        height: 390px;
+        border: 0px solid rgb(76, 76, 238);
+        border-radius: 12px;
+        margin: 50px 30px 0px 50px;
+        padding: 0.1px;
+    }
+    .desc_head_con_img img{
+        border-radius: 12px;
+    }
+    .desc_title_con{
+        width: auto;
+        height: auto;
+        border: 0px solid red;
+        padding: 0px 20px 10px 20px;
+        margin-top: 32px;
+    }
+    .desc_title_con p{
+        line-height: 32px;
+    }
+    .desc_title_con h4{
+        width: 520px;
+        height: auto;
+        border: 0px solid black;
+        margin-bottom: 5px;
+    }
+
+/* Description Page Style Design Media Query */    
+      
+}      
+@media screen and (max-width:1210px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        }
+}
+
+@media screen and (max-width:1067px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        }
+    nav{
+      width: auto;
+      height: 100px;
+      background: linear-gradient(aquamarine,rgba(153, 205, 50, 0.178));
+      color: rgba(32, 27, 27, 0.925);
+      border: 0px solid red;
+      display: flex;
+      flex-direction: column;
+      padding: 20px !important;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        margin: 0px 15px;
+    }
+    .logo img{
+        width: 202px;
+        height: 75px;
+        border: 0px solid black;
+        margin-top: -10px;
+      }  
+    .logo span{
+            display: block;
+            font-size: 35px;
+            margin-left: auto;
+            cursor: pointer;
+      }
+    nav ul{
+        position: absolute;
+        text-decoration: none;
+        width: 60%;
+        min-height: 88vh;
+        display: flex;
+        flex-direction: column;
+        font-size: 19px;
+        margin-top: 80px;
+        margin-left: -20px;
+        font-weight: 650;
+        background: linear-gradient(rgb(108, 253, 217),rgb(233, 190, 134));
+        transform: translate(-100%);
+        transition: transform 0.3s ease-in;
+    }
+    nav ul li{
+        list-style: none;
+        padding-left: 40px;
+        line-height: 40px !important;
+        padding-top: 35px;
+        
+    }
+    .nav-active{ 
+          transform: translateY(0%);
+    }
+    .header_wraper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec_con_wraper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }    
+   .header_inner_flex{
+       display: flex;
+   }  
+   .sec_flex_man_box{
+       display: flex;
+   }
+   .sec_con_flex_1{
+    width: 318px;
+    height: auto;
+    margin: 50px;
+    border: 1px solid #eeee;
+    border-radius: 12px;
+    background: rgba(219, 211, 221, 0.233);
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    }
+    
+}
+
+
+@media screen and (max-width:850px){
+    .header_wraper{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec_con_wraper{
+        display: flex;
+        flex-direction: column;
+   }    
+   .header_inner_flex{
+       display: flex;
+       flex-direction: column;
+   }  
+   .sec_flex_man_box{
+      display: flex;
+      flex-direction: column;
+   }
+
+/* Description Page */
+   .tech_con_box{
+    max-width: 850px;
+    min-width: 460px;
+    height: auto;
+    border: 0px solid red;
+    border-radius: 12px;
+    padding: 15px 35px;
+}
+.tech_con_head{
+    max-width: 280px;
+    min-width: none;
+    height: auto;
+    border: 0px solid black;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    font-size: 12px;
+}
+.tech_con_head h1{
+    margin: 0px 5px;
+}
+.tech_con_head hr{
+    margin-top: -2px;
+    margin-left: 0px;
+    border: 2px solid red;
+}
+.sec_con_flex_1{
+      display: none;
+}
+
+/* Description Page */
+}
+
+@media screen and (max-width:648px){
+    body{
+      overscroll-behavior-y: hidden;
+    }
+    .header{
+      max-width: auto;
+      min-width: auto;
+      height: auto;
+      border: 0px solid black;
+    }
+   .header_flex_man{
+      max-width: 350px;
+      min-width: auto;
+      height: auto;
+      margin: 0px 0px 12px 0px;
+      padding: 2px;
+      border: 1px solid #eeee;
+      border-radius: 12px;
+      display: flex;
+      background: rgba(219, 211, 221, 0.233);;
+    }
+    .head_con_title{
+      width: auto;
+      height: 312px;
+      border: 1px solid rgba(0, 0, 255, 0.486);
+      border-radius: 12px;
+      background-color: rgba(0, 0, 0, 0.493);
+      color: aliceblue;
+    }
+    .head_con_title h1{
+      width: 260px;
+      height: auto;
+      margin-top: 50px;
+      margin-left: 65px;
+    }
+    .header_bac_img{
+      width: 480px;
+      height: 312px !important;
+      border: 0px solid blue;
+      border-radius: 12px;
+      }
+      /* Header Second Content Css Style */
+
+      .second_containt_box{
+      max-width: 355px;
+      min-width: auto;
+      height: auto;
+      border: 0px solid black;
+      border-bottom: 1px solid #eeee;
+      display: flex;
+      }
+      .sec_con_img{
+      width: auto;
+      height: auto;
+      border: 0px solid rgb(157, 255, 9);
+      border-radius: 8px;
+      }
+      .sec_con_img img{
+      width: 150px;
+      height: 120px;
+      border-radius: 12px;
+      border: 1px solid greenyellow;
+      }
+      .sec_con_title{
+      width: 520px;
+      height: auto;
+      border: 0px solid black;
+
+      }
+      .sec_con_title h2{
+      width: auto;
+      height: auto;
+      margin: 0;
+      font-size: 15px;
+      line-height: 26px !important;
+      border: 0px solid black;
+      }
+      .sec_con_title p{
+      display: none;
+      line-height: 20px;
+      font-size: 0.8rem;
+      color: rgba(83, 85, 87, 0.911);
+      }
+      .sec_con_title small{
+      letter-spacing: 1px;
+      color: dimgrey;
+      }
+      .sec_con_flex_1{
+      display: block;
+      }
+
+      /* Header Second Content Css Style */
+      }
+
+      /*
+      @media screen and (max-width:367px){       
+        /*Navigations Bar Design*//*
+        a:focus{
+              outline: none;
+        }
+        nav{
+              width: auto;
+              height: 70px;
+              background: linear-gradient(aquamarine,rgba(153, 205, 50, 0.178));
+              color: rgba(32, 27, 27, 0.925);
+              border: 0px solid red;
+              display: flex;
+              flex-direction: column;
+              padding: 6px !important;
+        }
+        small{
+              font-size: 10px;
+        }
+        nav ul{
+              text-decoration: none;
+              width: 60%;
+              min-height: 82vh;
+              display: flex;
+              flex-direction: column;
+              font-size: 19px;
+              font-weight: 650;
+              margin-top: 63px;
+              margin-left: -20px;
+              transform: translate(-100%);
+              transition: transform 0.5s ease-in;
+              }
+        .logo{
+        display: flex;
+        align-items: center;
+        }
+        .logo img{
+            margin-left: -25px;
+            width: 202px;
+            height: 75px;
+            border: 0px solid black;
+            margin-top: -10px;
+        }
+        .logo span{
+          display: block;
+          font-size: 35px;
+          margin-left: auto;
+          margin-top: -15px;
+          margin-right: -8px;
+       }
+        nav ul li{
+        list-style: none;
+        padding-left: 40px;
+        line-height: 45px;
+        }
+        /*Navigations Bar Design*/
+  
+         /* Header CSS Style *//*
+        .header{
+        width: auto;
+        height: 240px;
+        margin:12px 0px 0px 0px;
+        border: 0px solid black;
+        padding: 0px;
+        }
+        .header_bac_img{
+        max-width: 350px;
+        min-width: auto;
+        height: 240px !important;
+        border: 0px solid red;
+        border-radius: 12px;
+        }  
+        .head_con_title{
+        width: auto;
+        height: 240px;
+        border: 1px solid rgba(0, 0, 255, 0.486);
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.493);
+        color: aliceblue;
+        }
+  
+        .head_con_title h1{
+        width: 200px;
+        height: auto;
+        border: 0px solid red;
+        margin: 50px;
+        margin-top: 18%;
+        font-size: 26px;
+        }
+        .flex_man_title h4{
+        width: 200px;
+        height: auto;
+        font-size: 15px;
+        margin-top: 0px;
+        border: 0px solid black;
+        }
+        .sec_con_flex_1{
+        display: block;
+        width: 340px;
+        height: auto;
+        margin: 12px 0px;
+        border: 1px solid #eeee;
+        border-radius: 12px;
+        background: rgba(219, 211, 221, 0.233);
+        padding-bottom: 15px;
+        letter-spacing: 1px;
+        }
+        .sec_con_title h2{
+        width: auto;
+        height: auto;
+        margin: 0;
+        font-size: 15px;
+        line-height: 21px !important;
+        border: 0px solid black;
+        }
+  
+  /* Description CSS Sylyle *//*
+  .desc_man_box{
+      width: 360px !important;
+      height: auto !important;
+      border: 0px solid red !important;
+      margin: 0px 0px !important;
+      }
+      .desc_man_box h1{
+      margin-top: 20px !important;
+      width: 332px !important;    
+      margin-left: 20px;
+      line-height: 34px !important;
+      font-size: 25px !important;
+      }
+      .desc_head_con_img{
+      width: auto !important;
+      height: auto !important;
+      border: 0px solid rgb(76, 76, 238) !important;
+      border-radius: 12px;
+      margin: 15px 0px 0px 0px  !important;
+      padding: 5px !important;
+      }
+      .desc_head_con_img img{
+      border-radius: 12px;
+      }
+      .desc_title_con{
+      width: auto;
+      height: auto;
+      border: 0px solid red !important;
+      padding: 0px 20px 10px 20px;
+      line-height: 32px;
+      font-size: 15px;
+      margin-top: 32px;
+      }
+      .desc_title_con h4{
+      width: 332px !important;
+      height: auto;
+      font-size: 20px !important;
+      border: 0px solid black;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      }
+      .desc_title_con p{
+      line-height: 26px;
+      font-size: 15px;
+      }
+  /* Description CSS Sylyle */
+  
+  /* Pagination CSS Style Mobile Responsive *//*
+  
+  .css-page-m-p-s{ 
+      padding: 10px;
+      margin-top: 25px;
+      border: 0px solid black;
+  }
+  .css-page-main{
+    width: 100% !important;
+    margin-left: 0px !important;
+    height: auto;
+    border: 0px solid red;
+  }
+  .css-page-control{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #ffff;
+    padding: 0.2rem;
+    color: #4a5568; /*Text Article Color *//*
+  }
+  .css-page-action{
+  width: 120px;
+  height: auto;
+  border: 0px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #718096;
+  font-size: 1rem;
+  color: #dfe9f7;  /* Muted Action Botton Color *//*
+  text-align: center;
+  }
+  .css-page-action a{
+    text-decoration: none;
+    color: #dfe9f7;
+  }
+  .next:hover{
+    background-color: #5a67d8c2;
+    transition: 0.7s;
+  }
+  .previous:hover{
+  background-color: #5a67d8c2;
+  transition: 0.7s;
+  }
+  .css-count-msg{
+    margin: 0;
+    margin: auto;
+  }
+  
+  /* Pagination CSS Style Mobile Responsive */
+  
+  
+  /* Tech Content Box CSS Style Design */  /*
+     
+  .tech_con_box{
+      max-width: 360px;
+      min-width: auto;
+      height: auto;
+      border: 0px solid red;
+      border-radius: 12px;
+      padding: 10px;
+  }
+  .tech_con_head{
+      max-width: 140px;
+      min-width: none;
+      height: auto;
+      border: 0px solid black;
+      margin-top: 25px;
+      margin-bottom: 60px;
+      font-size: 18px;
+  }
+  .tech_con_head h1{
+      width: 260px;
+      margin: 0px 5px;
+  }
+  .tech_con_head hr{
+      margin-top: -2px;
+      margin-left: 0px;
+      border: 2px solid red;
+  }
+  .sec_con_flex_1{
+      display: none;
+  }
+  footer{
+      width: auto;
+      height: auto;
+      background: linear-gradient(rgba(153, 205, 50, 0.178),aquamarine);
+      border: 0px solid red;
+      text-align: center;
+      padding: 5px 15px;
+      margin-bottom: 0px;
+      letter-spacing: 1px;
+  }
+  .footer_con{
+      width: auto;
+      height: auto;
+      border: 0px solid black;
+  }
+  
+  /* Tech Content Box CSS Style Design */
+  
+  /* Media Screen Responsive CSS Style *//*
+  }
